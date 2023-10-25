@@ -28,3 +28,8 @@ variable "admin_password" {
   sensitive   = true
   default     = null
 }
+
+variable "storage_account_name" {
+  type = string
+  description = "Storage account name"
+}
