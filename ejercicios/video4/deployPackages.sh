@@ -62,17 +62,6 @@ do
             cd ..
             ;;
     esac
-
-
-
-    if [ $project == "GetAdults" ]
-    then
-        
-    else
-        dotnet new webapi -o $project -n $project
-    fi
-    cd $project
-    cd ..
 done
 
 echo "9 proyectos creados correctamente con Dockerfile"
