@@ -1,6 +1,5 @@
 using Microsoft.EntityFrameworkCore;
 using GetAdultById.Data;
-using GetAdultById.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
