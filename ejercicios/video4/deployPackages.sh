@@ -40,8 +40,18 @@ do
             ;;
         "AddMember")
             cd "AddMember"
-            dotnet add package Swashbuckle.AspNetCore
-            dotnet add package Microsoft.AspNetCore.OpenApi
+                dotnet add package Swashbuckle.AspNetCore
+                dotnet add package Microsoft.AspNetCore.OpenApi
+                dotnet adp package Microsoft.Azure.ServiceBus
+            cd ..
+            ;;
+        "PickAge")
+            cd "PickAge"
+                rm -v /*
+                cat .env.example > .env
+                cat AgeSelector.py > AgeSelector.py
+                cat Dockerfile > Dockerfile
+                cat requirements.txt > requirements.txt
             cd ..
             ;;
         "BlobUpload")
@@ -50,15 +60,31 @@ do
             cd ..
             ;;
         "AddAdult")
-            cd "AddAdult"
+            rmdir "AddAdult"
+            dotnet new console -o AddAdult
+            cd AddAdult
+            dotnet add package Azure.Messaging.ServiceBus
             dotnet add package Microsoft.EntityFrameworkCore
             dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+            dotnet add package Microsoft.Extensions.Configuration
+            dotnet add package Microsoft.Extensions.Configuration.FileExtensions
+            dotnet add package Microsoft.Extensions.Configuration.Json
+            dotnet add package System.Data.SqlClient
+            cat Dockerfile > Dockerfile
             cd ..
             ;;
         "AddChildren")
-            cd "AddChildren"
+            rmdir "AddChildren"
+            dotnet new console -o AddChildren
+            cd AddChildren
+            dotnet add package Azure.Messaging.ServiceBus
             dotnet add package Microsoft.EntityFrameworkCore
             dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+            dotnet add package Microsoft.Extensions.Configuration
+            dotnet add package Microsoft.Extensions.Configuration.FileExtensions
+            dotnet add package Microsoft.Extensions.Configuration.Json
+            dotnet add package System.Data.SqlClient
+            cat Dockerfile > Dockerfile
             cd ..
             ;;
     esac
