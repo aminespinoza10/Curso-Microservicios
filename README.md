@@ -7,8 +7,8 @@ Este repositorio es todo lo que necesitas para lograr mejorar tu nivel de experi
 Capítulo 1: [Aprendiendo a crear una API mínima con SQL Azure](https://youtu.be/LFo1Vaz3s_M)  
 Capítulo 2: [Agregando blob storage y condiciones](https://youtu.be/RiLmmZex3hA)  
 Capítulo 3: [De mi API a los microservicios](https://youtu.be/o1t-53TSSaA)  
-Capítulo 4:  
-Capítulo 5:  
+Capítulo 4: [Convierte los métodos de tu API a servicios](https://youtu.be/mxQS5o6HVrk) 
+Capítulo 5: [Comunicación entre microservicios (queues)](https://youtu.be/NosvtzxYj3A)
 Capítulo 6:  
 Capítulo 7:  
 Capítulo 8:  
@@ -42,3 +42,20 @@ El diagrama visto en este video es el siguiente.
 
 ![Arquitectura](/assets/cap03img01.jpg "Arquitectura")
 
+### Capítulo 4
+
+La organización y comunicación entre mis microservicios.
+
+![Arquitectura](/assets/cap04img01.jpg "Arquitectura")
+
+### Capítulo 5
+
+Aquí tienes el diagrama de la comunicación entre microservicios.
+
+![Diagrama](/assets/cap05img01.jpg "Diagrama")
+
+Los paquetes de Nuget que se requieren para el capítulo 5 son los siguientes.
+
+[Azure.Messaging.ServiceBus](https://www.nuget.org/packages/Azure.Messaging.ServiceBus)
+
+En el caso de Python podrás encontrar todos los paquetes necesarios en el archivo requirements.txt.
