@@ -22,7 +22,6 @@ namespace AddMember
         {
             IQueueClient client = new QueueClient(_configuration["ServiceBus:AzureServiceBusConnectionString"], _configuration["ServiceBus:QueueName"]);
             var messageBody = ($"Name: {name}, Lastname: {lastname}, Birthyear: {birthyear}");
-
             var message = new Message(Encoding.UTF8.GetBytes(messageBody))
             {
                 MessageId = Guid.NewGuid().ToString(),
