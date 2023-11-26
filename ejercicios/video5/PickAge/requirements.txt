@@ -1,3 +1,0 @@
-Flask==2.2.2
-azure-servicebus==7.3.0
-asyncio==3.4.3

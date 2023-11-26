@@ -1,0 +1,60 @@
+version: '3.7'
+
+services:
+  service1:
+    image: getadults
+    build:
+      context: ./GetAdults
+      dockerfile: Dockerfile
+    ports:
+      - 5100:80
+  service2:
+    image: getadulbyid
+    build:
+      context: ./GetAdultById
+      dockerfile: Dockerfile
+    ports:
+      - 5200:80
+  service3:
+    image: addmember
+    build:
+      context: ./AddMember
+      dockerfile: Dockerfile
+    ports:
+      - 5300:80
+  service4:
+    image: getchildren
+    build:
+      context: ./GetChildren
+      dockerfile: Dockerfile
+    ports:
+      - 5400:80
+  service5:
+    image: getchildbyid
+    build:
+      context: ./GetChildById
+      dockerfile: Dockerfile
+    ports:
+      - 5500:80
+  service6:
+    image: pickage
+    build:
+      context: ./PickAge
+      dockerfile: Dockerfile
+  service7:
+    image: addadult
+    build:
+      context: ./AddAdult
+      dockerfile: Dockerfile
+  service8:
+    image: addchildren
+    build:
+      context: ./AddChildren
+      dockerfile: Dockerfile
+  service9:
+    image: blobupload
+    build:
+      context: ./BlobUpload
+      dockerfile: Dockerfile
+    ports:
+      - 5600:80
