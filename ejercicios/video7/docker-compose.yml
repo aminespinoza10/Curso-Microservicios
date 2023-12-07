@@ -9,7 +9,7 @@ services:
     ports:
       - 5100:80
   service2:
-    image: getadulbyid
+    image: getadultbyid
     build:
       context: ./GetAdultById
       dockerfile: Dockerfile
@@ -57,4 +57,4 @@ services:
       context: ./BlobUpload
       dockerfile: Dockerfile
     ports:
-      - 5600:80
+      - 5600:80   

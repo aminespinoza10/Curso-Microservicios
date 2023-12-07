@@ -1,0 +1,8 @@
+resource_group_location    = "eastus2"
+resource_group_name_prefix = "rg"
+sql_db_name                = "contoso"
+storage_account_name       = "aminesstorageaccount"
+storage_container_name     = "userimages"
+sb_namespace_name          = "aminessbnamespace"
+acr_name                   = "aminesacr"
+admin_password             = "S5p2rm1n_"

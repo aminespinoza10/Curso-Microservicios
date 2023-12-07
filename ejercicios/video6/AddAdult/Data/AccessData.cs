@@ -20,7 +20,6 @@ public class AccessData
                 string lastname = string.Empty;
                 int birthyear = 0;
                 string imageUrl = string.Empty;
-                
 
                 foreach (string field in fields)
                 {

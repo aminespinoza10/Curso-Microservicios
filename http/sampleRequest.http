@@ -1,0 +1,11 @@
+POST http://localhost:5600/Add/Blob
+?name=Amin
+&lastname=Espinoza
+Content-Type: multipart/form-data;boundary=MiImagen
+
+--MiImagen
+Content-Disposition: form-data; name="file"; filename="imagen.jpg"
+Content-Type: image/jpg
+
+< ./image.jpg
+--MiImagen--

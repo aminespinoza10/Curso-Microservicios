@@ -26,7 +26,7 @@ async def main():
                     msg_str = str(msg)
                     await pick_age(msg_str, adults_sender, children_sender)
                     await receiver.complete_message(msg)
-                    
+
 async def pick_age(message, adults_sender, children_sender):
     fields = message.split(',')
     for field in fields:

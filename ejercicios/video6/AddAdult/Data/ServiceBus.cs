@@ -1,4 +1,4 @@
-﻿using Azure.Messaging.ServiceBus;
+using Azure.Messaging.ServiceBus;
 using Microsoft.Extensions.Configuration;
 
 namespace AddAdult.Data

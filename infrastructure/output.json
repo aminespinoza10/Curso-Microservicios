@@ -1,0 +1,10 @@
+{
+  "acr_name": "aminesacr",
+  "admin_password": "S5p2rm1n_",
+  "admin_username": "azureadmin",
+  "resource_group_name": "rg-eager-mule",
+  "servicebus_endpoint": "Endpoint=sb://aminessbnamespace.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=z++VpQadbsyJ1RdUeoaePDoPMQfhtsDzk+ASbFDrF4o=",
+  "sql_database_name": "contoso",
+  "sql_server_name": "sql-relaxed-man",
+  "storage_connection_string": "DefaultEndpointsProtocol=https;AccountName=aminesstorageaccount;AccountKey=1m9AUP+MyBtV1ddChz2B1qOBeVtrP9whqz+SsbkhRCBbrtVzSmwdhZyXsU/euQJ6/YGzpbdmQlJt+ASto0+r2w==;EndpointSuffix=core.windows.net"
+}
