@@ -11,7 +11,7 @@ Capítulo 4: [Convierte los métodos de tu API a servicios](https://youtu.be/mxQ
 Capítulo 5: [Comunicación entre microservicios (queues)](https://youtu.be/NosvtzxYj3A)  
 Capítulo 6: [Comunicación entre microservicios (topics)](https://youtu.be/hHxH25g_s1c)   
 Capítulo 7: [Despliega todo con Docker Compose](https://youtu.be/D20YlUm_5_I)  
-Capítulo 8:  
+Capítulo 8: [https://youtu.be/f64KyWFujng](https://youtu.be/f64KyWFujng)  
 Capítulo 9:  
 Capítulo 10:  
 
@@ -75,5 +75,11 @@ Los paquetes de Nuget que se requieren para el capítulo 6 son los siguientes.
 
 ¡En este capítulo no hay nada que instalar y si hay mucho que disfrtuar! Aquí tienes el diagrama de los puertos que utilicé para cada microservicio.
 
+### Capítulo 8
+
+En este capítulo se requieren las siguientes herramientas para poder ejecutar el script.
+
+Azure CLI
+Terraform
 
 
