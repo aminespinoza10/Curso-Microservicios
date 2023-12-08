@@ -1,0 +1,19 @@
+name: AddAdult deployment
+
+on:
+  push:
+    branches: [ "addAdultBranch" ]
+
+jobs:
+  AddAdult:
+    name: Add Adult deployment
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ejercicios/video9/AddAdult
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v3
+      - name: Checking the place
+        run: |
+          ls -l
