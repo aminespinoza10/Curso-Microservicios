@@ -1,0 +1,43 @@
+name: GetAdultById deployment
+
+on:
+  push:
+    branches: [ "getAdultByIdBranch" ]
+
+env:
+  SERVICE_NAME: getadultbyid
+  RESOURCE_GROUP: rg-eager-mule
+  IMAGE_BASE_NAME: aminesacr.azurecr.io/getadultbyid:latest
+
+jobs:
+  AddAdult:
+    name: Get Adult By Id deployment
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ejercicios/video9/GetAdultById
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v3
+      - name: Azure Login
+        uses: Azure/login@v1.4.6
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }} 
+      - name: Install az containerapp extension
+        run: |
+          az config set extension.use_dynamic_install=yes_without_prompt
+      - name: ACR Login
+        uses: azure/docker-login@v1
+        with:
+          login-server: contoso.azurecr.io
+          username: ${{ secrets.ACR_USERNAME }}
+          password: ${{ secrets.ACR_PASSWORD }}    
+      - name: Build Docker NET image
+        run: | 
+          docker build --platform linux --tag $IMAGE_BASE_NAME -f .
+      - name: Publish Docker NET image
+        run: |
+          docker push $IMAGE_BASE_NAME
+      - name: Deploy NET container App
+        run: |
+          az containerapp up --name "$SERVICE_NAME" --resource-group $RESOURCE_GROUP --environment microservices-env --image $IMAGE_BASE_NAME
