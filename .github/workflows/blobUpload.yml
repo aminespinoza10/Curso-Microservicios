@@ -35,7 +35,7 @@ jobs:
           password: ${{ secrets.ACR_PASSWORD }} 
       - name: Build Docker NET image
         run: | 
-          docker build --platform linux --tag $IMAGE_BASE_NAME -f .
+          docker build --platform linux --tag $IMAGE_BASE_NAME .
       - name: Publish Docker NET image
         run: |
           docker push $IMAGE_BASE_NAME
