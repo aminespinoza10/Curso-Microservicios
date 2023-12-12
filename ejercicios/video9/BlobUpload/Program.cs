@@ -3,6 +3,7 @@ using BlobUpload.Data;
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddTransient<IBlob, Blob>();
+builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
