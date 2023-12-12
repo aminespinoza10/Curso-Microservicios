@@ -1,4 +1,4 @@
-# Curso-Microservicios
+# Curso de Microservicios
 
 Este repositorio es todo lo que necesitas para lograr mejorar tu nivel de experiencia en microservicios desde 0 hasta un total profesional.
 
@@ -11,9 +11,13 @@ Capítulo 4: [Convierte los métodos de tu API a servicios](https://youtu.be/mxQ
 Capítulo 5: [Comunicación entre microservicios (queues)](https://youtu.be/NosvtzxYj3A)  
 Capítulo 6: [Comunicación entre microservicios (topics)](https://youtu.be/hHxH25g_s1c)   
 Capítulo 7: [Despliega todo con Docker Compose](https://youtu.be/D20YlUm_5_I)  
-Capítulo 8: [https://youtu.be/f64KyWFujng](https://youtu.be/f64KyWFujng)  
+Capítulo 8: [¡Hora de desplegar en la nube!](https://youtu.be/f64KyWFujng)  
 Capítulo 9:  
 Capítulo 10:  
+
+O podemos hacerlo mucho más simple, aquí tienes la lista de reproducción.
+
+[![Lista de reproducción](/assets/playlist.jpg)](https://www.youtube.com/playlist?list=PL3ZslI15yo2pZ5jYXZ6Z4ZJ6q8Z3Z3Z3Z)
 
 ## Consideraciones para cada capítulo
 
@@ -81,5 +85,9 @@ En este capítulo se requieren las siguientes herramientas para poder ejecutar e
 
 Azure CLI
 Terraform
+sqlcmd
+
+### Capítulo 9
+
 
 
