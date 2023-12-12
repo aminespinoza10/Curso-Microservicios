@@ -6,7 +6,6 @@ builder.Services.AddTransient<IBlob, Blob>();
 
 var app = builder.Build();
 
-// swagger está listo para este servicio
 app.UseSwagger();
 app.UseSwaggerUI();
 
