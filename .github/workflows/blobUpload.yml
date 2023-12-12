@@ -3,7 +3,7 @@ name: BlobUpload deployment
 on:
   push:
     branches: 
-      - "blobUploadBranch"
+      - 'blobUploadBranch'
 
 env:
   SERVICE_NAME: blobupload
