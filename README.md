@@ -12,7 +12,7 @@ Capítulo 5: [Comunicación entre microservicios (queues)](https://youtu.be/Nosv
 Capítulo 6: [Comunicación entre microservicios (topics)](https://youtu.be/hHxH25g_s1c)   
 Capítulo 7: [Despliega todo con Docker Compose](https://youtu.be/D20YlUm_5_I)  
 Capítulo 8: [¡Hora de desplegar en la nube!](https://youtu.be/f64KyWFujng)  
-Capítulo 9: [CI/CD para cada uno de tus microservicios](https://www.youtube.com/watch?v=a-no0tt0WZE) 
+Capítulo 9: [CI/CD para cada uno de tus microservicios](https://www.youtube.com/watch?v=a-no0tt0WZE)  
 Capítulo 10: [Esto es solo el inicio](https://www.youtube.com/watch?v=qO4RLY-Y5jM)  
 
 O podemos hacerlo mucho más simple, aquí tienes la lista de reproducción.
