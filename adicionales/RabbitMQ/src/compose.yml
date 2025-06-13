@@ -1,0 +1,31 @@
+# Docker services
+services:
+  rabbitmq:
+    image: rabbitmq:4.1.0-management
+    container_name: rabbitmq
+    restart: always
+    tty: true
+    stdin_open: true
+    ports:
+      - "5672:5672"  # RabbitMQ default port
+      - "15672:15672"  # RabbitMQ management UI
+    volumes:
+      - ./enable_plugins:/etc/rabbitmq/enabled_plugins:ro
+
+  publisher:
+    build:
+      context: ./publisher
+    container_name: publisher
+    depends_on:
+      - rabbitmq
+    environment:
+      - ASPNETCORE_URLS=http://+:8080
+    ports:
+      - "8080:8080"
+
+  subscriber:
+    build:
+      context: ./subscriber
+    container_name: subscriber
+    depends_on:
+      - rabbitmq

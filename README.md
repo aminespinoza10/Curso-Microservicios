@@ -86,6 +86,3 @@ En este capítulo se requieren las siguientes herramientas para poder ejecutar e
 Azure CLI
 Terraform
 sqlcmd
-
-#### DELETE_ME
-
