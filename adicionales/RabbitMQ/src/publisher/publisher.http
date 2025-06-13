@@ -1,6 +1,10 @@
 @publisher_HostAddress = http://localhost:5122
 
-GET {{publisher_HostAddress}}/weatherforecast/
-Accept: application/json
+POST {{publisher_HostAddress}}/enviarMensaje
+Content-Type: application/json
+
+{
+    "message": "Your message here"
+}
 
 ###
