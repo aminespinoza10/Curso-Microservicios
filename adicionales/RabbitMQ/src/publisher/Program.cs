@@ -8,7 +8,7 @@ var app = builder.Build();
 
 app.UseSwagger();
 app.UseSwaggerUI();
-app.UseHttpsRedirection();
+// app.UseHttpsRedirection(); // Disabled to avoid failed redirects due to lack of HTTPS endpoint
 
 app.MapPost("/enviarMensaje", async (IServiceProvider serviceProvider, string name, string lastname, string phoneNumber) =>
 {
