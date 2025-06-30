@@ -1,0 +1,17 @@
+services:
+  otel-lgtm:
+    image: grafana/otel-lgtm
+    container_name: otel-lgtm
+    ports:
+      - "4317:4317" 
+      - "3000:3000"
+  telemetryapi:
+    build:
+      context: ./TelemetryApi
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    depends_on:
+      - otel-lgtm
